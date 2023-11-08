@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    height: 650px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.stories{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+    white-space: nowrap; /* Ensure content in .stories doesn't wrap */
+    overflow-x: auto;
+}
+
+.stories::-webkit-scrollbar{
+     display: none;
+}
+
+.story{
+    border: 3px solid rgb(200, 24, 156);
+    margin: 2px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+    object-position: center;
+}
+.story-view{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-position: cover;
+    background-size: cover;
+}
+.post iframe{
+    margin-top: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: 99;
+}
